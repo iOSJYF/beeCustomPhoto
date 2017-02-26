@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  BeeCustomPhoto
+//
+//  Created by Ji_YuFeng on 17/2/18.
+//  Copyright © 2017年 Bee. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define ScreenHeight        [UIScreen mainScreen].bounds.size.height
+#define ScreenWidth         [UIScreen mainScreen].bounds.size.width
+#define USER_DEFAULT        [NSUserDefaults standardUserDefaults]
+
+#if __has_feature(objc_arc)
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+#else
+#define WS(weakSelf)  __block __typeof(&*self)weakSelf = self;
+#endif
+
+#import <Masonry.h>
+#import "JMWhenTapped.h"
+
+#endif /* PrefixHeader_pch */

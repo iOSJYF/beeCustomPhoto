@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C1F445A1E62A25A006ACB62 /* BeePhotoAlbumChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F43FF1E62A25A006ACB62 /* BeePhotoAlbumChooseViewController.m */; };
+		5C1F445B1E62A25A006ACB62 /* BeePhotoAlbumCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F44011E62A25A006ACB62 /* BeePhotoAlbumCollectionViewCell.m */; };
+		5C1F445C1E62A25A006ACB62 /* BeePhotoGropTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F44031E62A25A006ACB62 /* BeePhotoGropTableViewCell.m */; };
+		5C1F445D1E62A25A006ACB62 /* BeePhotoGropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F44051E62A25A006ACB62 /* BeePhotoGropViewController.m */; };
+		5C1F445E1E62A25A006ACB62 /* BeePicCutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F44081E62A25A006ACB62 /* BeePicCutViewController.m */; };
+		5C1F445F1E62A25A006ACB62 /* CYCropCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F440B1E62A25A006ACB62 /* CYCropCornerView.m */; };
+		5C1F44601E62A25A006ACB62 /* CYCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F440D1E62A25A006ACB62 /* CYCropView.m */; };
+		5C1F44611E62A25A006ACB62 /* UIImageView+CYCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F440F1E62A25A006ACB62 /* UIImageView+CYCrop.m */; };
+		5C1F44621E62A25A006ACB62 /* BeeDIYPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F44111E62A25A006ACB62 /* BeeDIYPhoto.m */; };
+		5C1F44631E62A25A006ACB62 /* BeeEditPicBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F44131E62A25A006ACB62 /* BeeEditPicBottomView.m */; };
+		5C1F44641E62A25A006ACB62 /* BeeEditPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F44151E62A25A006ACB62 /* BeeEditPicViewController.m */; };
+		5C1F44651E62A25A006ACB62 /* DACircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F44181E62A25A006ACB62 /* DACircularProgressView.m */; };
+		5C1F44791E62A25A006ACB62 /* UIImage-Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F444A1E62A25A006ACB62 /* UIImage-Extension.m */; };
+		5C1F447A1E62A25A006ACB62 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F444E1E62A25A006ACB62 /* UIView+Layout.m */; };
+		5C1F44841E62A2D5006ACB62 /* BeeBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F44811E62A2D5006ACB62 /* BeeBaseNavigationViewController.m */; };
+		5C1F44851E62A2D5006ACB62 /* BeeBaseNoNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F44831E62A2D5006ACB62 /* BeeBaseNoNavigationViewController.m */; };
+		5C1F44881E62A584006ACB62 /* BeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F44871E62A584006ACB62 /* BeeViewController.m */; };
+		5C508A6A1E58985D00750297 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C508A691E58985D00750297 /* main.m */; };
+		5C508A6D1E58985E00750297 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C508A6C1E58985E00750297 /* AppDelegate.m */; };
+		5C508A701E58985E00750297 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C508A6F1E58985E00750297 /* ViewController.m */; };
+		5C508A731E58985E00750297 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C508A711E58985E00750297 /* Main.storyboard */; };
+		5C508A751E58985E00750297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C508A741E58985E00750297 /* Assets.xcassets */; };
+		5C508A781E58985E00750297 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C508A761E58985E00750297 /* LaunchScreen.storyboard */; };
+		5C508A831E58985E00750297 /* BeeCustomPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C508A821E58985E00750297 /* BeeCustomPhotoTests.m */; };
+		5C508A8E1E58985E00750297 /* BeeCustomPhotoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C508A8D1E58985E00750297 /* BeeCustomPhotoUITests.m */; };
+		5C508B331E58A57E00750297 /* UIView+WhenTappedBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C508B321E58A57E00750297 /* UIView+WhenTappedBlocks.m */; };
+		8EFFD003CFA8D96F3354DB75 /* libPods-BeeCustomPhoto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D99935730E117CEB33175E76 /* libPods-BeeCustomPhoto.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C508A7F1E58985E00750297 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C508A5D1E58985D00750297 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C508A641E58985D00750297;
+			remoteInfo = BeeCustomPhoto;
+		};
+		5C508A8A1E58985E00750297 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C508A5D1E58985D00750297 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C508A641E58985D00750297;
+			remoteInfo = BeeCustomPhoto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		561F542BA05CE7F130DD7162 /* Pods-BeeCustomPhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeeCustomPhoto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeeCustomPhoto/Pods-BeeCustomPhoto.debug.xcconfig"; sourceTree = "<group>"; };
+		5C1F43FE1E62A25A006ACB62 /* BeePhotoAlbumChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeePhotoAlbumChooseViewController.h; sourceTree = "<group>"; };
+		5C1F43FF1E62A25A006ACB62 /* BeePhotoAlbumChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeePhotoAlbumChooseViewController.m; sourceTree = "<group>"; };
+		5C1F44001E62A25A006ACB62 /* BeePhotoAlbumCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeePhotoAlbumCollectionViewCell.h; sourceTree = "<group>"; };
+		5C1F44011E62A25A006ACB62 /* BeePhotoAlbumCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeePhotoAlbumCollectionViewCell.m; sourceTree = "<group>"; };
+		5C1F44021E62A25A006ACB62 /* BeePhotoGropTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeePhotoGropTableViewCell.h; sourceTree = "<group>"; };
+		5C1F44031E62A25A006ACB62 /* BeePhotoGropTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeePhotoGropTableViewCell.m; sourceTree = "<group>"; };
+		5C1F44041E62A25A006ACB62 /* BeePhotoGropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeePhotoGropViewController.h; sourceTree = "<group>"; };
+		5C1F44051E62A25A006ACB62 /* BeePhotoGropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeePhotoGropViewController.m; sourceTree = "<group>"; };
+		5C1F44071E62A25A006ACB62 /* BeePicCutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeePicCutViewController.h; sourceTree = "<group>"; };
+		5C1F44081E62A25A006ACB62 /* BeePicCutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeePicCutViewController.m; sourceTree = "<group>"; };
+		5C1F440A1E62A25A006ACB62 /* CYCropCornerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYCropCornerView.h; sourceTree = "<group>"; };
+		5C1F440B1E62A25A006ACB62 /* CYCropCornerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYCropCornerView.m; sourceTree = "<group>"; };
+		5C1F440C1E62A25A006ACB62 /* CYCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYCropView.h; sourceTree = "<group>"; };
+		5C1F440D1E62A25A006ACB62 /* CYCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYCropView.m; sourceTree = "<group>"; };
+		5C1F440E1E62A25A006ACB62 /* UIImageView+CYCrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CYCrop.h"; sourceTree = "<group>"; };
+		5C1F440F1E62A25A006ACB62 /* UIImageView+CYCrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CYCrop.m"; sourceTree = "<group>"; };
+		5C1F44101E62A25A006ACB62 /* BeeDIYPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeeDIYPhoto.h; sourceTree = "<group>"; };
+		5C1F44111E62A25A006ACB62 /* BeeDIYPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeeDIYPhoto.m; sourceTree = "<group>"; };
+		5C1F44121E62A25A006ACB62 /* BeeEditPicBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeeEditPicBottomView.h; sourceTree = "<group>"; };
+		5C1F44131E62A25A006ACB62 /* BeeEditPicBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeeEditPicBottomView.m; sourceTree = "<group>"; };
+		5C1F44141E62A25A006ACB62 /* BeeEditPicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeeEditPicViewController.h; sourceTree = "<group>"; };
+		5C1F44151E62A25A006ACB62 /* BeeEditPicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeeEditPicViewController.m; sourceTree = "<group>"; };
+		5C1F44171E62A25A006ACB62 /* DACircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACircularProgressView.h; sourceTree = "<group>"; };
+		5C1F44181E62A25A006ACB62 /* DACircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACircularProgressView.m; sourceTree = "<group>"; };
+		5C1F44491E62A25A006ACB62 /* UIImage-Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-Extension.h"; sourceTree = "<group>"; };
+		5C1F444A1E62A25A006ACB62 /* UIImage-Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage-Extension.m"; sourceTree = "<group>"; };
+		5C1F444D1E62A25A006ACB62 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		5C1F444E1E62A25A006ACB62 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		5C1F44801E62A2D5006ACB62 /* BeeBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeeBaseNavigationViewController.h; sourceTree = "<group>"; };
+		5C1F44811E62A2D5006ACB62 /* BeeBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeeBaseNavigationViewController.m; sourceTree = "<group>"; };
+		5C1F44821E62A2D5006ACB62 /* BeeBaseNoNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeeBaseNoNavigationViewController.h; sourceTree = "<group>"; };
+		5C1F44831E62A2D5006ACB62 /* BeeBaseNoNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeeBaseNoNavigationViewController.m; sourceTree = "<group>"; };
+		5C1F44861E62A584006ACB62 /* BeeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeeViewController.h; sourceTree = "<group>"; };
+		5C1F44871E62A584006ACB62 /* BeeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeeViewController.m; sourceTree = "<group>"; };
+		5C508A651E58985D00750297 /* BeeCustomPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeeCustomPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C508A691E58985D00750297 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5C508A6B1E58985E00750297 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5C508A6C1E58985E00750297 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5C508A6E1E58985E00750297 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5C508A6F1E58985E00750297 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5C508A721E58985E00750297 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5C508A741E58985E00750297 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C508A771E58985E00750297 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5C508A791E58985E00750297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C508A7E1E58985E00750297 /* BeeCustomPhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeeCustomPhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C508A821E58985E00750297 /* BeeCustomPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeeCustomPhotoTests.m; sourceTree = "<group>"; };
+		5C508A841E58985E00750297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C508A891E58985E00750297 /* BeeCustomPhotoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeeCustomPhotoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C508A8D1E58985E00750297 /* BeeCustomPhotoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeeCustomPhotoUITests.m; sourceTree = "<group>"; };
+		5C508A8F1E58985E00750297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C508B1F1E5899F400750297 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5C508B301E58A57E00750297 /* JMWhenTapped.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMWhenTapped.h; sourceTree = "<group>"; };
+		5C508B311E58A57E00750297 /* UIView+WhenTappedBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WhenTappedBlocks.h"; sourceTree = "<group>"; };
+		5C508B321E58A57E00750297 /* UIView+WhenTappedBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WhenTappedBlocks.m"; sourceTree = "<group>"; };
+		A13C18259260507A87C27BD3 /* Pods-BeeCustomPhoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeeCustomPhoto.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeeCustomPhoto/Pods-BeeCustomPhoto.release.xcconfig"; sourceTree = "<group>"; };
+		D99935730E117CEB33175E76 /* libPods-BeeCustomPhoto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeeCustomPhoto.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C508A621E58985D00750297 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EFFD003CFA8D96F3354DB75 /* libPods-BeeCustomPhoto.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C508A7B1E58985E00750297 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C508A861E58985E00750297 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C1F43FC1E62A25A006ACB62 /* BeePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				5C1F43FD1E62A25A006ACB62 /* BeeCustomPhoto Album */,
+				5C1F44061E62A25A006ACB62 /* BeeCut */,
+				5C1F44101E62A25A006ACB62 /* BeeDIYPhoto.h */,
+				5C1F44111E62A25A006ACB62 /* BeeDIYPhoto.m */,
+				5C1F44121E62A25A006ACB62 /* BeeEditPicBottomView.h */,
+				5C1F44131E62A25A006ACB62 /* BeeEditPicBottomView.m */,
+				5C1F44141E62A25A006ACB62 /* BeeEditPicViewController.h */,
+				5C1F44151E62A25A006ACB62 /* BeeEditPicViewController.m */,
+				5C1F44161E62A25A006ACB62 /* DACircularProgress */,
+				5C1F44491E62A25A006ACB62 /* UIImage-Extension.h */,
+				5C1F444A1E62A25A006ACB62 /* UIImage-Extension.m */,
+				5C1F444B1E62A25A006ACB62 /* Utils */,
+			);
+			path = BeePhoto;
+			sourceTree = "<group>";
+		};
+		5C1F43FD1E62A25A006ACB62 /* BeeCustomPhoto Album */ = {
+			isa = PBXGroup;
+			children = (
+				5C1F43FE1E62A25A006ACB62 /* BeePhotoAlbumChooseViewController.h */,
+				5C1F43FF1E62A25A006ACB62 /* BeePhotoAlbumChooseViewController.m */,
+				5C1F44001E62A25A006ACB62 /* BeePhotoAlbumCollectionViewCell.h */,
+				5C1F44011E62A25A006ACB62 /* BeePhotoAlbumCollectionViewCell.m */,
+				5C1F44021E62A25A006ACB62 /* BeePhotoGropTableViewCell.h */,
+				5C1F44031E62A25A006ACB62 /* BeePhotoGropTableViewCell.m */,
+				5C1F44041E62A25A006ACB62 /* BeePhotoGropViewController.h */,
+				5C1F44051E62A25A006ACB62 /* BeePhotoGropViewController.m */,
+			);
+			path = "BeeCustomPhoto Album";
+			sourceTree = "<group>";
+		};
+		5C1F44061E62A25A006ACB62 /* BeeCut */ = {
+			isa = PBXGroup;
+			children = (
+				5C1F44071E62A25A006ACB62 /* BeePicCutViewController.h */,
+				5C1F44081E62A25A006ACB62 /* BeePicCutViewController.m */,
+				5C1F44091E62A25A006ACB62 /* CYImageCrop */,
+			);
+			path = BeeCut;
+			sourceTree = "<group>";
+		};
+		5C1F44091E62A25A006ACB62 /* CYImageCrop */ = {
+			isa = PBXGroup;
+			children = (
+				5C1F440A1E62A25A006ACB62 /* CYCropCornerView.h */,
+				5C1F440B1E62A25A006ACB62 /* CYCropCornerView.m */,
+				5C1F440C1E62A25A006ACB62 /* CYCropView.h */,
+				5C1F440D1E62A25A006ACB62 /* CYCropView.m */,
+				5C1F440E1E62A25A006ACB62 /* UIImageView+CYCrop.h */,
+				5C1F440F1E62A25A006ACB62 /* UIImageView+CYCrop.m */,
+			);
+			path = CYImageCrop;
+			sourceTree = "<group>";
+		};
+		5C1F44161E62A25A006ACB62 /* DACircularProgress */ = {
+			isa = PBXGroup;
+			children = (
+				5C1F44171E62A25A006ACB62 /* DACircularProgressView.h */,
+				5C1F44181E62A25A006ACB62 /* DACircularProgressView.m */,
+			);
+			path = DACircularProgress;
+			sourceTree = "<group>";
+		};
+		5C1F444B1E62A25A006ACB62 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5C1F444C1E62A25A006ACB62 /* Category */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5C1F444C1E62A25A006ACB62 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				5C1F444D1E62A25A006ACB62 /* UIView+Layout.h */,
+				5C1F444E1E62A25A006ACB62 /* UIView+Layout.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		5C508A5C1E58985D00750297 = {
+			isa = PBXGroup;
+			children = (
+				5C508A671E58985D00750297 /* BeeCustomPhoto */,
+				5C508A811E58985E00750297 /* BeeCustomPhotoTests */,
+				5C508A8C1E58985E00750297 /* BeeCustomPhotoUITests */,
+				5C508A661E58985D00750297 /* Products */,
+				8102AE54424BF372DC1577DA /* Pods */,
+				C57627A9095368D969A88FB6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5C508A661E58985D00750297 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C508A651E58985D00750297 /* BeeCustomPhoto.app */,
+				5C508A7E1E58985E00750297 /* BeeCustomPhotoTests.xctest */,
+				5C508A891E58985E00750297 /* BeeCustomPhotoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C508A671E58985D00750297 /* BeeCustomPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				5C1F44801E62A2D5006ACB62 /* BeeBaseNavigationViewController.h */,
+				5C1F44811E62A2D5006ACB62 /* BeeBaseNavigationViewController.m */,
+				5C1F44821E62A2D5006ACB62 /* BeeBaseNoNavigationViewController.h */,
+				5C1F44831E62A2D5006ACB62 /* BeeBaseNoNavigationViewController.m */,
+				5C1F43FC1E62A25A006ACB62 /* BeePhoto */,
+				5C508B2F1E58A57E00750297 /* JMWhenTapped */,
+				5C508A6B1E58985E00750297 /* AppDelegate.h */,
+				5C508A6C1E58985E00750297 /* AppDelegate.m */,
+				5C508A6E1E58985E00750297 /* ViewController.h */,
+				5C508A6F1E58985E00750297 /* ViewController.m */,
+				5C1F44861E62A584006ACB62 /* BeeViewController.h */,
+				5C1F44871E62A584006ACB62 /* BeeViewController.m */,
+				5C508B1F1E5899F400750297 /* PrefixHeader.pch */,
+				5C508A711E58985E00750297 /* Main.storyboard */,
+				5C508A741E58985E00750297 /* Assets.xcassets */,
+				5C508A761E58985E00750297 /* LaunchScreen.storyboard */,
+				5C508A791E58985E00750297 /* Info.plist */,
+				5C508A681E58985D00750297 /* Supporting Files */,
+			);
+			path = BeeCustomPhoto;
+			sourceTree = "<group>";
+		};
+		5C508A681E58985D00750297 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C508A691E58985D00750297 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C508A811E58985E00750297 /* BeeCustomPhotoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C508A821E58985E00750297 /* BeeCustomPhotoTests.m */,
+				5C508A841E58985E00750297 /* Info.plist */,
+			);
+			path = BeeCustomPhotoTests;
+			sourceTree = "<group>";
+		};
+		5C508A8C1E58985E00750297 /* BeeCustomPhotoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5C508A8D1E58985E00750297 /* BeeCustomPhotoUITests.m */,
+				5C508A8F1E58985E00750297 /* Info.plist */,
+			);
+			path = BeeCustomPhotoUITests;
+			sourceTree = "<group>";
+		};
+		5C508B2F1E58A57E00750297 /* JMWhenTapped */ = {
+			isa = PBXGroup;
+			children = (
+				5C508B301E58A57E00750297 /* JMWhenTapped.h */,
+				5C508B311E58A57E00750297 /* UIView+WhenTappedBlocks.h */,
+				5C508B321E58A57E00750297 /* UIView+WhenTappedBlocks.m */,
+			);
+			path = JMWhenTapped;
+			sourceTree = "<group>";
+		};
+		8102AE54424BF372DC1577DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				561F542BA05CE7F130DD7162 /* Pods-BeeCustomPhoto.debug.xcconfig */,
+				A13C18259260507A87C27BD3 /* Pods-BeeCustomPhoto.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C57627A9095368D969A88FB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D99935730E117CEB33175E76 /* libPods-BeeCustomPhoto.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C508A641E58985D00750297 /* BeeCustomPhoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C508A921E58985E00750297 /* Build configuration list for PBXNativeTarget "BeeCustomPhoto" */;
+			buildPhases = (
+				11F036A7961FC5E6A043378D /* [CP] Check Pods Manifest.lock */,
+				5C508A611E58985D00750297 /* Sources */,
+				5C508A621E58985D00750297 /* Frameworks */,
+				5C508A631E58985D00750297 /* Resources */,
+				FD41FAB912DF9B41C65F3960 /* [CP] Embed Pods Frameworks */,
+				99AE867DE0C62FD680A2D521 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeeCustomPhoto;
+			productName = BeeCustomPhoto;
+			productReference = 5C508A651E58985D00750297 /* BeeCustomPhoto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5C508A7D1E58985E00750297 /* BeeCustomPhotoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C508A951E58985E00750297 /* Build configuration list for PBXNativeTarget "BeeCustomPhotoTests" */;
+			buildPhases = (
+				5C508A7A1E58985E00750297 /* Sources */,
+				5C508A7B1E58985E00750297 /* Frameworks */,
+				5C508A7C1E58985E00750297 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C508A801E58985E00750297 /* PBXTargetDependency */,
+			);
+			name = BeeCustomPhotoTests;
+			productName = BeeCustomPhotoTests;
+			productReference = 5C508A7E1E58985E00750297 /* BeeCustomPhotoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5C508A881E58985E00750297 /* BeeCustomPhotoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C508A981E58985E00750297 /* Build configuration list for PBXNativeTarget "BeeCustomPhotoUITests" */;
+			buildPhases = (
+				5C508A851E58985E00750297 /* Sources */,
+				5C508A861E58985E00750297 /* Frameworks */,
+				5C508A871E58985E00750297 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C508A8B1E58985E00750297 /* PBXTargetDependency */,
+			);
+			name = BeeCustomPhotoUITests;
+			productName = BeeCustomPhotoUITests;
+			productReference = 5C508A891E58985E00750297 /* BeeCustomPhotoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C508A5D1E58985D00750297 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Bee;
+				TargetAttributes = {
+					5C508A641E58985D00750297 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Z7GR6ZAZKT;
+						ProvisioningStyle = Automatic;
+					};
+					5C508A7D1E58985E00750297 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5C508A641E58985D00750297;
+					};
+					5C508A881E58985E00750297 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5C508A641E58985D00750297;
+					};
+				};
+			};
+			buildConfigurationList = 5C508A601E58985D00750297 /* Build configuration list for PBXProject "BeeCustomPhoto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C508A5C1E58985D00750297;
+			productRefGroup = 5C508A661E58985D00750297 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C508A641E58985D00750297 /* BeeCustomPhoto */,
+				5C508A7D1E58985E00750297 /* BeeCustomPhotoTests */,
+				5C508A881E58985E00750297 /* BeeCustomPhotoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C508A631E58985D00750297 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C508A781E58985E00750297 /* LaunchScreen.storyboard in Resources */,
+				5C508A751E58985E00750297 /* Assets.xcassets in Resources */,
+				5C508A731E58985E00750297 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C508A7C1E58985E00750297 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C508A871E58985E00750297 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11F036A7961FC5E6A043378D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		99AE867DE0C62FD680A2D521 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeeCustomPhoto/Pods-BeeCustomPhoto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD41FAB912DF9B41C65F3960 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeeCustomPhoto/Pods-BeeCustomPhoto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C508A611E58985D00750297 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C508B331E58A57E00750297 /* UIView+WhenTappedBlocks.m in Sources */,
+				5C508A701E58985E00750297 /* ViewController.m in Sources */,
+				5C1F44851E62A2D5006ACB62 /* BeeBaseNoNavigationViewController.m in Sources */,
+				5C1F44611E62A25A006ACB62 /* UIImageView+CYCrop.m in Sources */,
+				5C1F445B1E62A25A006ACB62 /* BeePhotoAlbumCollectionViewCell.m in Sources */,
+				5C1F44601E62A25A006ACB62 /* CYCropView.m in Sources */,
+				5C1F447A1E62A25A006ACB62 /* UIView+Layout.m in Sources */,
+				5C1F445C1E62A25A006ACB62 /* BeePhotoGropTableViewCell.m in Sources */,
+				5C1F445D1E62A25A006ACB62 /* BeePhotoGropViewController.m in Sources */,
+				5C1F44641E62A25A006ACB62 /* BeeEditPicViewController.m in Sources */,
+				5C1F445F1E62A25A006ACB62 /* CYCropCornerView.m in Sources */,
+				5C1F445A1E62A25A006ACB62 /* BeePhotoAlbumChooseViewController.m in Sources */,
+				5C1F44791E62A25A006ACB62 /* UIImage-Extension.m in Sources */,
+				5C508A6D1E58985E00750297 /* AppDelegate.m in Sources */,
+				5C1F445E1E62A25A006ACB62 /* BeePicCutViewController.m in Sources */,
+				5C1F44631E62A25A006ACB62 /* BeeEditPicBottomView.m in Sources */,
+				5C1F44651E62A25A006ACB62 /* DACircularProgressView.m in Sources */,
+				5C508A6A1E58985D00750297 /* main.m in Sources */,
+				5C1F44841E62A2D5006ACB62 /* BeeBaseNavigationViewController.m in Sources */,
+				5C1F44881E62A584006ACB62 /* BeeViewController.m in Sources */,
+				5C1F44621E62A25A006ACB62 /* BeeDIYPhoto.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C508A7A1E58985E00750297 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C508A831E58985E00750297 /* BeeCustomPhotoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C508A851E58985E00750297 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C508A8E1E58985E00750297 /* BeeCustomPhotoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C508A801E58985E00750297 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C508A641E58985D00750297 /* BeeCustomPhoto */;
+			targetProxy = 5C508A7F1E58985E00750297 /* PBXContainerItemProxy */;
+		};
+		5C508A8B1E58985E00750297 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C508A641E58985D00750297 /* BeeCustomPhoto */;
+			targetProxy = 5C508A8A1E58985E00750297 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5C508A711E58985E00750297 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C508A721E58985E00750297 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5C508A761E58985E00750297 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C508A771E58985E00750297 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C508A901E58985E00750297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5C508A911E58985E00750297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C508A931E58985E00750297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 561F542BA05CE7F130DD7162 /* Pods-BeeCustomPhoto.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z7GR6ZAZKT;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BeeCustomPhoto/PrefixHeader.pch";
+				INFOPLIST_FILE = BeeCustomPhoto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = QSYS.FDR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5C508A941E58985E00750297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A13C18259260507A87C27BD3 /* Pods-BeeCustomPhoto.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z7GR6ZAZKT;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BeeCustomPhoto/PrefixHeader.pch";
+				INFOPLIST_FILE = BeeCustomPhoto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = QSYS.FDR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5C508A961E58985E00750297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BeeCustomPhotoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bee.BeeCustomPhotoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeeCustomPhoto.app/BeeCustomPhoto";
+			};
+			name = Debug;
+		};
+		5C508A971E58985E00750297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BeeCustomPhotoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bee.BeeCustomPhotoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeeCustomPhoto.app/BeeCustomPhoto";
+			};
+			name = Release;
+		};
+		5C508A991E58985E00750297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BeeCustomPhotoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bee.BeeCustomPhotoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BeeCustomPhoto;
+			};
+			name = Debug;
+		};
+		5C508A9A1E58985E00750297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BeeCustomPhotoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bee.BeeCustomPhotoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BeeCustomPhoto;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C508A601E58985D00750297 /* Build configuration list for PBXProject "BeeCustomPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C508A901E58985E00750297 /* Debug */,
+				5C508A911E58985E00750297 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C508A921E58985E00750297 /* Build configuration list for PBXNativeTarget "BeeCustomPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C508A931E58985E00750297 /* Debug */,
+				5C508A941E58985E00750297 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C508A951E58985E00750297 /* Build configuration list for PBXNativeTarget "BeeCustomPhotoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C508A961E58985E00750297 /* Debug */,
+				5C508A971E58985E00750297 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C508A981E58985E00750297 /* Build configuration list for PBXNativeTarget "BeeCustomPhotoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C508A991E58985E00750297 /* Debug */,
+				5C508A9A1E58985E00750297 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C508A5D1E58985D00750297 /* Project object */;
+}
