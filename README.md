@@ -1,1 +1,2 @@
-![github](http://github.com/unicorn.png "github")  
+ 
+ ![image](https://github.com/iOSJYF/beeCustomPhoto/raw/master/beeCustomPhoto.jpg)
