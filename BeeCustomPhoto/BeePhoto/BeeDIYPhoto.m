@@ -12,6 +12,7 @@
 
 #import <AVFoundation/AVCaptureDevice.h>
 #import <AVFoundation/AVMediaFormat.h>
+#import "BeePhotoModel.h"
 
 static BeeDIYPhoto * beeDIYPhoto = nil;
 
@@ -109,7 +110,8 @@ static BeeDIYPhoto * beeDIYPhoto = nil;
     vc.maxcount = 1;
     vc.selectMore = NO;
     WS(weakSelf);
-    vc.originblock = ^(UIImage *img){
+    vc.originblock = ^(BeePhotoModel *imgModel){
+        UIImage *img = imgModel.bigImg;
         [weakSelf gotoCutPhotoViewController:img];
     };
     UINavigationController *nVC = [[UINavigationController alloc]initWithRootViewController:vc];

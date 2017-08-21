@@ -9,7 +9,7 @@
 #import "BeeViewController.h"
 #import "BeeDIYPhoto.h"
 #import "BeePhotoGropViewController.h"
-
+#import "BeeWebViewController.h"
 
 //typedef NS_ENUM(NSInteger, CYCropScaleType) {
 //    CYCropScaleTypeCustom,
@@ -108,6 +108,8 @@
 
 - (void)moreAction
 {
+
+
     BeePhotoGropViewController *vc = [[BeePhotoGropViewController alloc]init];
     vc.selectMore = YES;
     vc.maxcount = 2;  // 最多两张图片
@@ -116,12 +118,15 @@
 //        NSLog(@"多选的图片data数组：imgdata = %@",arr);
         if (arr.count > 0) {
             if (arr[0]) {
-                [weakSelf.img1 setImage:[UIImage imageWithData:arr[0]]];
+                BeePhotoModel *themodel = arr[0];
+//                [weakSelf.img1 setImage:[UIImage imageWithData:arr[0]]];
+                weakSelf.img1.image = themodel.bigImg;
             }
         }
         if (arr.count == 2) {
             if (arr[1]) {
-                [weakSelf.img2 setImage:[UIImage imageWithData:arr[1]]];
+                BeePhotoModel *themodel = arr[1];
+                weakSelf.img2.image = themodel.bigImg;
             }
         }
         
@@ -129,6 +134,9 @@
     };
     UINavigationController *nvc =  [[UINavigationController alloc]initWithRootViewController:vc];
     [self presentViewController:nvc animated:YES completion:nil];
+     
+     
+     
 }
 
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C1DE38C1F46B87600A98D19 /* BeeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1DE38B1F46B87600A98D19 /* BeeWebViewController.m */; };
+		5C1DE38F1F46CD4700A98D19 /* BeePhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1DE38E1F46CD4700A98D19 /* BeePhotoModel.m */; };
 		5C1F445A1E62A25A006ACB62 /* BeePhotoAlbumChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F43FF1E62A25A006ACB62 /* BeePhotoAlbumChooseViewController.m */; };
 		5C1F445B1E62A25A006ACB62 /* BeePhotoAlbumCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F44011E62A25A006ACB62 /* BeePhotoAlbumCollectionViewCell.m */; };
 		5C1F445C1E62A25A006ACB62 /* BeePhotoGropTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F44031E62A25A006ACB62 /* BeePhotoGropTableViewCell.m */; };
@@ -55,6 +57,10 @@
 
 /* Begin PBXFileReference section */
 		561F542BA05CE7F130DD7162 /* Pods-BeeCustomPhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeeCustomPhoto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeeCustomPhoto/Pods-BeeCustomPhoto.debug.xcconfig"; sourceTree = "<group>"; };
+		5C1DE38A1F46B87600A98D19 /* BeeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeeWebViewController.h; sourceTree = "<group>"; };
+		5C1DE38B1F46B87600A98D19 /* BeeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeeWebViewController.m; sourceTree = "<group>"; };
+		5C1DE38D1F46CD4700A98D19 /* BeePhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeePhotoModel.h; sourceTree = "<group>"; };
+		5C1DE38E1F46CD4700A98D19 /* BeePhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeePhotoModel.m; sourceTree = "<group>"; };
 		5C1F43FE1E62A25A006ACB62 /* BeePhotoAlbumChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeePhotoAlbumChooseViewController.h; sourceTree = "<group>"; };
 		5C1F43FF1E62A25A006ACB62 /* BeePhotoAlbumChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeePhotoAlbumChooseViewController.m; sourceTree = "<group>"; };
 		5C1F44001E62A25A006ACB62 /* BeePhotoAlbumCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeePhotoAlbumCollectionViewCell.h; sourceTree = "<group>"; };
@@ -169,6 +175,8 @@
 				5C1F44031E62A25A006ACB62 /* BeePhotoGropTableViewCell.m */,
 				5C1F44041E62A25A006ACB62 /* BeePhotoGropViewController.h */,
 				5C1F44051E62A25A006ACB62 /* BeePhotoGropViewController.m */,
+				5C1DE38D1F46CD4700A98D19 /* BeePhotoModel.h */,
+				5C1DE38E1F46CD4700A98D19 /* BeePhotoModel.m */,
 			);
 			path = "BeeCustomPhoto Album";
 			sourceTree = "<group>";
@@ -259,6 +267,8 @@
 				5C508A6F1E58985E00750297 /* ViewController.m */,
 				5C1F44861E62A584006ACB62 /* BeeViewController.h */,
 				5C1F44871E62A584006ACB62 /* BeeViewController.m */,
+				5C1DE38A1F46B87600A98D19 /* BeeWebViewController.h */,
+				5C1DE38B1F46B87600A98D19 /* BeeWebViewController.m */,
 				5C508B1F1E5899F400750297 /* PrefixHeader.pch */,
 				5C508A711E58985E00750297 /* Main.storyboard */,
 				5C508A741E58985E00750297 /* Assets.xcassets */,
@@ -393,6 +403,7 @@
 					5C508A641E58985D00750297 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = Z7GR6ZAZKT;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					5C508A7D1E58985E00750297 = {
@@ -467,7 +478,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		99AE867DE0C62FD680A2D521 /* [CP] Copy Pods Resources */ = {
@@ -511,6 +522,7 @@
 				5C508A701E58985E00750297 /* ViewController.m in Sources */,
 				5C1F44851E62A2D5006ACB62 /* BeeBaseNoNavigationViewController.m in Sources */,
 				5C1F44611E62A25A006ACB62 /* UIImageView+CYCrop.m in Sources */,
+				5C1DE38C1F46B87600A98D19 /* BeeWebViewController.m in Sources */,
 				5C1F445B1E62A25A006ACB62 /* BeePhotoAlbumCollectionViewCell.m in Sources */,
 				5C1F44601E62A25A006ACB62 /* CYCropView.m in Sources */,
 				5C1F447A1E62A25A006ACB62 /* UIView+Layout.m in Sources */,
@@ -522,6 +534,7 @@
 				5C1F44791E62A25A006ACB62 /* UIImage-Extension.m in Sources */,
 				5C508A6D1E58985E00750297 /* AppDelegate.m in Sources */,
 				5C1F445E1E62A25A006ACB62 /* BeePicCutViewController.m in Sources */,
+				5C1DE38F1F46CD4700A98D19 /* BeePhotoModel.m in Sources */,
 				5C1F44631E62A25A006ACB62 /* BeeEditPicBottomView.m in Sources */,
 				5C1F44651E62A25A006ACB62 /* DACircularProgressView.m in Sources */,
 				5C508A6A1E58985D00750297 /* main.m in Sources */,
@@ -675,6 +688,7 @@
 			baseConfigurationReference = 561F542BA05CE7F130DD7162 /* Pods-BeeCustomPhoto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = Z7GR6ZAZKT;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -684,6 +698,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = QSYS.FDR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -692,6 +708,7 @@
 			baseConfigurationReference = A13C18259260507A87C27BD3 /* Pods-BeeCustomPhoto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = Z7GR6ZAZKT;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -701,6 +718,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = QSYS.FDR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

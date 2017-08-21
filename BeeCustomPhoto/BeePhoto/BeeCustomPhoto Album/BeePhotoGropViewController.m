@@ -113,9 +113,9 @@ static BeePhotoGropViewController * gropViewVC = nil;
                     vc.selectMore = self.selectMore;
                     vc.maxCount = self.maxcount;
                     WS(weakSelf);
-                    vc.selectBlock = ^(UIImage *img){
+                    vc.selectBlock = ^(BeePhotoModel *imgModel){
                         if (weakSelf.originblock) {
-                            weakSelf.originblock(img);
+                            weakSelf.originblock(imgModel);
                         }
                     };
                     vc.imgArrBlock = ^(NSArray *arr){
@@ -160,9 +160,9 @@ static BeePhotoGropViewController * gropViewVC = nil;
             vc.selectMore = self.selectMore;
             vc.maxCount = self.maxcount;
             WS(weakSelf);
-            vc.selectBlock = ^(UIImage *img){
+            vc.selectBlock = ^(BeePhotoModel *imgModel){
                 if (weakSelf.originblock) {
-                    weakSelf.originblock(img);
+                    weakSelf.originblock(imgModel);
                 }
             };
             vc.imgArrBlock = ^(NSArray *arr){
@@ -232,9 +232,9 @@ static BeePhotoGropViewController * gropViewVC = nil;
     vc.selectMore = self.selectMore;
     vc.maxCount = self.maxcount;
     WS(weakSelf);
-    vc.selectBlock = ^(UIImage *img){
+    vc.selectBlock = ^(BeePhotoModel *imgModel){
         if (weakSelf.originblock) {
-            weakSelf.originblock(img);
+            weakSelf.originblock(imgModel);
         }
     };
     vc.imgArrBlock = ^(NSArray *arr){

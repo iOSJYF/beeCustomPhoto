@@ -8,8 +8,9 @@
 
 #import "BeeBaseNavigationViewController.h"
 #import <Photos/Photos.h>
+#import "BeePhotoModel.h"
 
-typedef void (^SelectBlock)(UIImage *image);
+typedef void (^SelectBlock)(BeePhotoModel *imageModel);
 typedef void (^SelectArrayBlock)(NSArray *imgArr);
 
 @interface BeePhotoAlbumChooseViewController : BeeBaseNavigationViewController

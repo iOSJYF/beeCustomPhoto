@@ -7,8 +7,9 @@
 //
 
 #import "BeeBaseNavigationViewController.h"
+#import "BeePhotoModel.h"
 
-typedef void(^OriginBlock)(UIImage *img);
+typedef void(^OriginBlock)(BeePhotoModel *imgModel);
 typedef void(^GetTheImgArrBlock)(NSArray *arr); // 返回多选图片数组
 
 @interface BeePhotoGropViewController : BeeBaseNavigationViewController

@@ -8,6 +8,7 @@
 
 #import "BeePhotoAlbumChooseViewController.h"
 #import "BeePhotoAlbumCollectionViewCell.h"
+#import "BeePhotoModel.h"
 
 @interface BeePhotoAlbumChooseViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -18,6 +19,8 @@
 @property (nonatomic,strong) NSMutableArray *selectMoreArr; // 多选 imagedata数组
 @property (nonatomic,strong) NSMutableArray *picArray; //用于判断是否选中
 //@property (strong, nonatomic) NSMutableArray *alubmsArr; //相册数组
+
+@property (nonatomic,strong) BeePhotoModel *model;
 
 @end
 
@@ -63,6 +66,8 @@
 //    MBProgressHUD *hud = [[MBProgressHUD alloc]initWithView:self.view];
 //    [self.view addSubview:hud];
 //    [hud show:YES];
+    
+    self.model = [[BeePhotoModel alloc]init];
     
     self.array = [[NSMutableArray alloc]init];
     self.selectMoreArr = [[NSMutableArray alloc]init];
@@ -184,14 +189,25 @@
         opt.synchronous = YES;
         
         PHImageManager *imageManager = [[PHImageManager alloc] init];
-        [imageManager requestImageDataForAsset:asset options:nil resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
-            UIImage *myImage = [[UIImage alloc]initWithData:imageData];
-            
+//        [imageManager requestImageDataForAsset:asset options:nil resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
+//            UIImage *myImage = [[UIImage alloc]initWithData:imageData];
+//            
+//            if (self.selectBlock) {
+//                self.selectBlock(myImage);
+//                [self dismissViewControllerAnimated:YES completion:nil];
+//            }
+//        }];
+        
+        [imageManager requestImageForAsset:asset targetSize:PHImageManagerMaximumSize contentMode:PHImageContentModeAspectFit options:opt resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+            self.model.smallImg = self.array[indexPath.row];
+            self.model.bigImg = result;
             if (self.selectBlock) {
-                self.selectBlock(myImage);
+                self.selectBlock(self.model);
                 [self dismissViewControllerAnimated:YES completion:nil];
             }
         }];
+        
+        
     }
     
 }
@@ -206,18 +222,64 @@
     opt.synchronous = YES;
     
     PHImageManager *imageManager = [[PHImageManager alloc] init];
-    [imageManager requestImageDataForAsset:asset options:nil resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
-//        if ([self.selectMoreArr containsObject:imageData]) {
+//    [imageManager requestImageDataForAsset:asset options:nil resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
+////        if ([self.selectMoreArr containsObject:imageData]) {
+//        if ([self.picArray[index]  isEqual: @0]) {
+//            [self.selectMoreArr removeObject:imageData];
+//            [self.picArray replaceObjectAtIndex:index withObject:@1];
+//        }
+//        else{
+//            [self.selectMoreArr addObject:imageData];
+//            [self.picArray replaceObjectAtIndex:index withObject:@0];
+//        }
+//        if (self.selectMoreArr.count > self.maxCount) {
+//            [self.selectMoreArr removeObject:imageData];
+//            [self.picArray replaceObjectAtIndex:index withObject:@1];
+//            NSString *string = [NSString stringWithFormat:@"最多只能选择%d张图片",(int)self.maxCount];
+//            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:string preferredStyle:UIAlertControllerStyleAlert];
+//            UIAlertAction * cancel = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+//            [alertController addAction:cancel];
+//            [self presentViewController:alertController animated:YES completion:nil];
+//            [self.collectionView reloadData];
+//
+//        }
+//        
+//    }];
+    
+    
+    [imageManager requestImageForAsset:asset targetSize:PHImageManagerMaximumSize contentMode:PHImageContentModeAspectFit options:opt resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+        
+        self.model = [[BeePhotoModel alloc]init];
+        
+        self.model.bigImg = result;
+        self.model.smallImg = self.array[index];
+        self.model.theID = index;
+        
         if ([self.picArray[index]  isEqual: @0]) {
-            [self.selectMoreArr removeObject:imageData];
+//            [self.selectMoreArr removeObject:self.model];
+//            for (BeePhotoModel *themodel in self.selectMoreArr) {
+//                if (themodel.theID == index) {
+//                    [self.selectMoreArr removeObject:themodel];
+//                }
+//            }
+            
+            for (int i = 0 ; i < self.selectMoreArr.count; i++) {
+                self.model = self.selectMoreArr[i];
+                if (self.model.theID == index) {
+                    [self.selectMoreArr removeObjectAtIndex:i];
+                }
+            }
+            
+            
             [self.picArray replaceObjectAtIndex:index withObject:@1];
+            return ;
         }
         else{
-            [self.selectMoreArr addObject:imageData];
+            [self.selectMoreArr addObject:self.model];
             [self.picArray replaceObjectAtIndex:index withObject:@0];
         }
         if (self.selectMoreArr.count > self.maxCount) {
-            [self.selectMoreArr removeObject:imageData];
+            [self.selectMoreArr removeObject:self.model];
             [self.picArray replaceObjectAtIndex:index withObject:@1];
             NSString *string = [NSString stringWithFormat:@"最多只能选择%d张图片",(int)self.maxCount];
             UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:string preferredStyle:UIAlertControllerStyleAlert];
@@ -225,8 +287,9 @@
             [alertController addAction:cancel];
             [self presentViewController:alertController animated:YES completion:nil];
             [self.collectionView reloadData];
-
+            
         }
+        
         
     }];
     
